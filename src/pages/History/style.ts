@@ -59,9 +59,22 @@ export const HistoryList = styled.div`
             }
         }
     }
-
     /* table th {
         position: sticky;
         top: 0;
     } */
+`;
+
+export const Status = styled.span`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 9999px;
+        background-color: ${(props) => props.theme["yellow-500"]};
+    }
 `;
