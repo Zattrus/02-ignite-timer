@@ -50,6 +50,11 @@ export function CyclesContextProvider({ children }: CycleContextProvideProps) {
             if (storedStateJSON) {
                 return JSON.parse(storedStateJSON);
             }
+
+            return {
+                cycles: [],
+                activeCycleId: null,
+            };
         }
     );
 
